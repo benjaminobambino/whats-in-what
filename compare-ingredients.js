@@ -1,3 +1,12 @@
+import {
+  testOne,
+  testTwo,
+  gerberGoodStartGentlePro,
+  enfamilReguline,
+  enfamilNutramigen,
+  parentsChoiceSensitivity
+} from './data';
+
 const compareIngredients = (stringOne, stringTwo) => {
   const foodOne = stringOne.split(', ');
   const foodTwo = stringTwo.split(', ');
@@ -28,3 +37,5 @@ const compareIngredients = (stringOne, stringTwo) => {
 
   return comparisonData;
 };
+
+console.log(compareIngredients(enfamilReguline, enfamilNutramigen));
