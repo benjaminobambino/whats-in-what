@@ -39,7 +39,7 @@ const compareIngredients = (stringOne, stringTwo) => {
 };
 
 const getPrimaryOrSecondary = (food, index) => {
-  const primSecDivided = food.split('LESS THAN 2%:');
+  const primSecDivided = food.split('LESS THAN 2%');
   // console.log(primSecDivided[index]);
   return primSecDivided[index];
 };
@@ -58,22 +58,26 @@ const allCompared = compareIngredients(
   enfamilNutramigen
 );
 
-// console.log(allCompared);
-// console.log(getPrimaryOrSecondary(gerberGoodStartGentlePro, 0));
+const primaryCompared = compareIngredients(
+  getPrimaryOrSecondary(gerberGoodStartGentlePro, 0),
+  getPrimaryOrSecondary(enfamilNutramigen, 0)
+);
 
-// const primaryCompared = compareIngredients(
-//   getPrimaryOrSecondary(gerberGoodStartGentlePro, 0),
-//   getPrimaryOrSecondary(enfamilNutramigen, 0)
-// );
+const secondaryCompared = compareIngredients(
+  getPrimaryOrSecondary(gerberGoodStartGentlePro, 1),
+  getPrimaryOrSecondary(enfamilNutramigen, 1)
+);
 
-// console.log(primaryCompared);
-
-// const secondaryCompared = compareIngredients(
-//   getPrimaryOrSecondary(gerberGoodStartGentlePro, 1),
-//   getPrimaryOrSecondary(enfamilNutramigen, 1)
-// );
-
-// console.log('ALL INGREDIENTS:');
+console.log(
+  'ALL INGREDIENTS:',
+  allCompared,
+  '\n\n',
+  'PRIMARY INGREDIENTS:',
+  primaryCompared,
+  '\n\n',
+  'SECONDARY INGREDIENTS:',
+  secondaryCompared
+);
 // console.log(allCompared);
 
 // console.log('PRIMARY INGREDIENTS:');
