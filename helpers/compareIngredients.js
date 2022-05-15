@@ -29,12 +29,6 @@ const compareIngredients = (stringOne, stringTwo) => {
   return comparisonData;
 };
 
-const getPrimaryOrSecondary = (food, index) => {
-  const primSecDivided = food.split('LESS THAN 2%');
-  return primSecDivided[index];
-};
-
 module.exports = {
-  compareIngredients,
-  getPrimaryOrSecondary
+  compareIngredients
 };

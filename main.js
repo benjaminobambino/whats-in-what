@@ -5,10 +5,7 @@ const {
   parentsChoiceSensitivity
 } = require('./data');
 
-const {
-  compareIngredients,
-  getPrimaryOrSecondary
-} = require('./helpers/compareIngredients');
+const { compareIngredients, getPrimaryOrSecondary } = require('./helpers');
 
 const allCompared = compareIngredients(
   gerberGoodStartGentlePro,
