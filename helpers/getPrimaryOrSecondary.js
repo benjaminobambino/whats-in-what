@@ -1,5 +1,5 @@
 const getPrimaryOrSecondary = (food, index) => {
-  const primSecDivided = food.split('LESS THAN 2%');
+  const primSecDivided = food.split('LESS THAN');
   return primSecDivided[index];
 };
 
