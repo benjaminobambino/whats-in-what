@@ -2,24 +2,26 @@ const {
   gerberGoodStartGentlePro,
   enfamilReguline,
   enfamilNutramigen,
-  parentsChoiceSensitivity
+  parentsChoiceSensitivity,
+  gerberGoodStartGentleSoy,
+  comfortsSoyBased
 } = require('./data');
 
 const { compareIngredients, getPrimaryOrSecondary } = require('./helpers');
 
 const allCompared = compareIngredients(
-  gerberGoodStartGentlePro,
-  enfamilNutramigen
+  comfortsSoyBased,
+  gerberGoodStartGentleSoy
 );
 
 const primaryCompared = compareIngredients(
-  getPrimaryOrSecondary(gerberGoodStartGentlePro, 0),
-  getPrimaryOrSecondary(enfamilNutramigen, 0)
+  getPrimaryOrSecondary(comfortsSoyBased, 0),
+  getPrimaryOrSecondary(gerberGoodStartGentleSoy, 0)
 );
 
 const secondaryCompared = compareIngredients(
-  getPrimaryOrSecondary(gerberGoodStartGentlePro, 1),
-  getPrimaryOrSecondary(enfamilNutramigen, 1)
+  getPrimaryOrSecondary(comfortsSoyBased, 1),
+  getPrimaryOrSecondary(gerberGoodStartGentleSoy, 1)
 );
 
 console.log(
