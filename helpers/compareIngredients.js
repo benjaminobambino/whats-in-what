@@ -6,9 +6,13 @@ const compareIngredients = (stringOne, stringTwo) => {
   foodTwo.sort();
 
   for (let oneIndex = 0; oneIndex < foodOne.length; oneIndex++) {
-    let oneIngredient = foodOne[oneIndex].toUpperCase();
+    let oneIngredient = foodOne[oneIndex]
+      .replace('[^A-Za-z0-9_]', '')
+      .toUpperCase();
     for (let twoIndex = 0; twoIndex < foodTwo.length; twoIndex++) {
-      let twoIngredient = foodTwo[twoIndex].toUpperCase();
+      let twoIngredient = foodTwo[twoIndex]
+        .replace('[^A-Za-z0-9_]', '')
+        .toUpperCase();
       if (oneIngredient === twoIngredient) {
         sharedIngredients.push(foodOne[oneIndex]);
         foodOne.splice(oneIndex, 1);
