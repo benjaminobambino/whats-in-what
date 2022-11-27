@@ -16,11 +16,15 @@ const gerberGoodStartGentleSoy =
 const comfortsSoyBased =
   'Water, Linoleic Acid, Inositol, Other Ingredients: Corn Syrup, Soy Protein Isolate, Palm Olein, Coconut Oil, Soy Oil, High Oleic ( Safflower Or Sunflower ) Oil, LESS THAN 2%: Mortierella Alpina Oil, Crypthecodinium Cohnii Oil, Lutein, Fructooligosaccharides, Calcium Phosphate, Potassium Citrate, Potassium Chloride, Magnesium Chloride, Sodium Citrate, Ascorbic Acid, Choline Bitartrate, L-Methionine, Taurine, Ascorbyl Palmitate, Ferrous Sulfate, Inositol, Mixed Tocopherol Concentrate, Zinc Sulfate, Vitamin E ( Dl-Alpha Tocopheryl Acetate ), L-Carnitine, Niacinamide, Calcium Pantothenate, Cupric Sulfate, Thiamine Hydrochloride, Vitamin A Palmitate, Riboflavin, Pyridoxine Hydrochloride, Folic Acid, Potassium Iodide, Potassium Hydroxide, Vitamin K ( Phytonadione ), Biotin, Sodium Selenite, Beta-carotene, Vitamin D ( Cholecalciferol ), Cyanocobalamin, Monoglycerides, Soy Lecithin, Tribasic Calcium Phosphate, Calcium Carbonate, Manganese Sulfate, Potassium Bicarbonate';
 
+const mamaBearSoy =
+  'Corn Syrup, Soy Protein Isolate, Palm Olein, Soy Oil, Coconut Oil, High Oleic (Safflower Or Sunflower) Oil, LESS THAN 2%: Mortierella Alpina Oil*, Crypthecodinium Cohnii Oil**, Lutein, Fructooligosaccharide, Calcium Phosphate, Potassium Citrate, Potassium Chloride, Magnesium Chloride, Sodium Citrate, Ascorbic Acid, Choline Bitartrate, L-Methionine, Taurine, Ascorbyl Palmitate, Ferrous Sulfate, Inositol, Mixed Tocopherol Concentrate, Zinc Sulfate, Vitamin E (dl-Alpha Tocopheryl Acetate), L-CARNITINE, Niacinamide, Calcium Pantothenate, Cupric Sulfate, Thiamine Hydrochloride, Vitamin A Palmitate, Riboflavin, Pyridoxine Hydrochloride, Folic Acid, Potassium Iodide, Potassium Hydroxide, Vitamin K (Phytonadione), Biotin, Sodium Selenite, Beta-Carotene, Vitamin D (Cholecalciferol), Cyanocobalamin, Monoglycerides, Soy Lecithin, Tribasic Calcium Phosphate, Calcium Carbonate, Manganese Sulfate, Potassium Bicarbonate. Contains Soy Ingredients. *A Source Of Arachidonic Acid (ARA) **A Source Of Docosahexaenoic Acid (DHA)';
+
 module.exports = {
   gerberGoodStartGentlePro,
   enfamilReguline,
   enfamilNutramigen,
   parentsChoiceSensitivity,
   gerberGoodStartGentleSoy,
-  comfortsSoyBased
+  comfortsSoyBased,
+  mamaBearSoy
 };
